@@ -41,3 +41,50 @@ export interface User {
     updated_at: string;
     [key: string]: unknown; // This allows for additional properties...
 }
+
+export interface Project {
+    id: number;
+    name: string;
+    description: string;
+    created_at: string;
+    tags: any;
+    banner_url: string;
+    status: string;
+    project_type: string;
+    isTeamProject: boolean;
+    team_id?: string;
+    github_url?: string;
+    website_url?: string;
+    technologies?: any;
+    database_type?: string;
+    programming_language?: string;
+    framework?: string;
+    server_os?: string;
+    deployment_environment?: string;
+    has_backend?: boolean;
+    has_frontend?: boolean;
+    has_database?: boolean;
+    start_date?: string;
+    end_date?: string;
+    estimated_hours?: number;
+    actual_hours?: number;
+    budget?: number;
+    currency?: string;
+    progress?: string;
+    notes?: string;
+    client_name?: string;
+    requirements?: string;
+    features?: string;
+    version_control?: string;
+    repo_url?: string;
+    commit_hash?: string;
+    branch?: string;
+    api_docs_url?: string;
+    design_docs_url?: string;
+    user_docs_url?: string;
+    has_tests?: boolean;
+    test_coverage?: string;
+    is_secure?: boolean;
+    security_notes?: string;
+}
+

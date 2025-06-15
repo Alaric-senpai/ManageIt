@@ -1,10 +1,12 @@
+//@ts-nocheck
 import React from 'react';
-import { RootLayout } from '@/components/RootLayout';
+import { RootLayout } from '@/layouts/root/RootLayout';
 import { CheckCircle, Clock, Calendar, Users, PieChart, Bell, FileText, RefreshCw } from 'lucide-react';
+import { Head, } from '@inertiajs/react';
 
 const FeatureCard = ({ icon: Icon, title, description }) => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-start transition-all hover:shadow-lg">
+    <div className="themed-bg-secondary shadow-md rounded-lg p-6 flex flex-col items-start transition-all hover:shadow-lg">
       <div className="bg-blue-100 p-3 rounded-full mb-4">
         <Icon className="text-blue-600" size={24} />
       </div>
@@ -59,13 +61,15 @@ const FeaturesPage = () => {
   ];
 
   return (
+    <>
+    <Head title="Manage it Features" />
     <RootLayout>
-      <div className="bg-gradient-to-b from-blue-50 to-white py-12 px-4 sm:px-6 lg:px-8">
+      <div className="flex min-h-screen flex-col themed-bg ">
         <div className="max-w-7xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mb-16">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">Powerful Features to Manage Your Projects</h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h1 className="text-4xl font-bold  mb-4">Powerful Features to Manage Your Projects</h1>
+            <p className="text-xl  max-w-3xl mx-auto">
               Our comprehensive toolset helps teams of all sizes plan, track, and deliver projects with ease and efficiency.
             </p>
           </div>
@@ -93,6 +97,7 @@ const FeaturesPage = () => {
         </div>
       </div>
     </RootLayout>
+    </>
   );
 };
 

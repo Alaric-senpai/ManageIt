@@ -1,5 +1,5 @@
 import React from 'react';
-import { RootLayout } from '@/components/RootLayout';
+import { RootLayout } from '@/layouts/root/RootLayout';
 import { Shield, Clock, Award, TrendingUp, Users } from 'lucide-react';
 
 const TeamMember = ({ name, role, image }) => {

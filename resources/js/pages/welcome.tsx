@@ -1,6 +1,6 @@
-import { Head, Link, usePage } from '@inertiajs/react';
-import type { SharedData } from '@/types';
-import {RootLayout} from '@/components/RootLayout'
+import { Head, Link } from '@inertiajs/react';
+// import type {  } from '@/types';
+import {RootLayout} from '@/layouts/root/RootLayout'
 export default function Welcome() {
 
     return (

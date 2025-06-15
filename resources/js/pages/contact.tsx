@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RootLayout } from '@/components/RootLayout';
+import { RootLayout } from '@/layouts/root/RootLayout';
 import { Mail, Phone, MapPin, MessageSquare, Send } from 'lucide-react';
 
 const ContactMethod = ({ icon: Icon, title, description, buttonText }) => {

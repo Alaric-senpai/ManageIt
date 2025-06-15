@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import { Link, usePage } from '@inertiajs/react';
 import React from 'react';
 
@@ -30,6 +32,7 @@ export function RootLayout({ children }) {
                             </Link>
                         </nav>
                         <div className="flex items-center space-x-4">
+                            
                             {auth?.user ? (
                                 <Link
                                     href={route('dashboard')}
@@ -109,11 +112,11 @@ export function RootLayout({ children }) {
                                         About
                                     </Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link href="/blog" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
                                         Blog
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li>
                                     <Link href="/contact" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
                                         Contact
